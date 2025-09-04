@@ -1,0 +1,16 @@
+{
+  "name": "image-converter-online-scss",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node replace-domain.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5",
+    "sass": "^1.69.5",
+    "dotenv": "^16.3.1"
+  }
+}

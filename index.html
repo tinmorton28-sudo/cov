@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Free Online Image Converter: Convert JPG, PNG, WEBP & More | Converter</title>
+    <meta name="description" content="Convert your images easily and quickly. Convert JPG to PNG, WEBP to JPG, and many other formats, all free, secure & directly in your browser.">
+    <meta name="keywords" content="image converter, jpg to png, webp to jpg, online image converter, free, jpeg converter, png converter, webp converter, convert photo">
+    <link rel="canonical" href="https://{{DOMAIN}}/image-converter">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebTool",
+      "name": "Free Online Image Converter",
+      "description": "Convert your image formats like PNG to JPG, WEBP to PNG, and more online and for free.",
+      "operatingSystem": "Any",
+      "applicationCategory": "Multimedia",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://{{DOMAIN}}/image-converter"
+    }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav">
+        <a href="/" class="logo">Converter</a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content container">
+      <div id="converter-wrapper">
+        <div id="initial-view">
+            <h1 id="dynamic-main-title">Free Online Image Converter</h1>
+            <p>Convert your image files online & free</p>
+            <div class="converter-interface">
+                <div class="file-input-section">
+                    <label for="file-input" class="choose-files-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                        Choose Files
+                    </label>
+                    <input type="file" id="file-input" multiple accept="image/*">
+                </div>
+                <p class="file-size-info">Drop files here. 100 MB maximum file size.</p>
+                <div class="format-conversion-section">
+                    <div class="format-dropdown-wrapper">
+                        <select id="input-format-select" class="format-select">
+                            <option value="any">ANY</option>
+                            <option value="image/jpeg">JPG</option>
+                            <option value="image/png">PNG</option>
+                            <option value="image/webp">WEBP</option>
+                            <option value="image/gif">GIF</option>
+                            <option value="image/bmp">BMP</option>
+                            <option value="image/tiff">TIFF</option>
+                            <option value="image/x-icon">ICO</option>
+                            <option value="image/svg+xml">SVG</option>
+                            <option value="image/heic">HEIC</option>
+                            <option value="image/avif">AVIF</option>
+                        </select>
+                    </div>
+                    <span class="conversion-separator">to</span>
+                    <div class="format-dropdown-wrapper">
+                        <select id="output-format-select" class="format-select">
+                            <option value="image/webp">WEBP</option>
+                            <option value="image/jpeg">JPG</option>
+                            <option value="image/png">PNG</option>
+                            <option value="image/gif">GIF</option>
+                            <option value="image/bmp">BMP</option>
+                            <option value="image/tiff">TIFF</option>
+                            <option value="image/x-icon">ICO</option>
+                            <option value="image/svg+xml">SVG</option>
+                            <option value="image/heic">HEIC</option>
+                            <option value="image/avif">AVIF</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="file-list-view" class="hidden">
+            <div id="file-list-container" class="file-list-container">
+            </div>
+            <div class="action-bar">
+                <label for="add-more-files-input" class="add-more-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    Add more files
+                </label>
+                <input type="file" id="add-more-files-input" multiple accept="image/*">
+                <button id="convert-all-btn" class="convert-all-button">
+                    Convert
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </div>
+        </div>
+      </div>
+
+      <div id="info-cards-section" class="info-cards-section">
+          <div class="info-card" data-format="image/jpeg">
+              <span class="format-tag">JPG</span>
+              <h3>JPEG Image</h3>
+              <p>JPG (or JPEG) is a popular file format used for images and graphics. It is a lossy compression format, which means it reduces file size by permanently removing some information from the image.</p>
+          </div>
+          <div class="info-card" data-format="image/png">
+              <span class="format-tag">PNG</span>
+              <h3>Portable Network Graphics</h3>
+              <p>PNG is a raster-graphics file format that supports lossless data compression and transparency. It's an excellent choice for web graphics, logos, and images where quality is more important than file size.</p>
+          </div>
+          <div class="info-card" data-format="image/webp">
+              <span class="format-tag">WEBP</span>
+              <h3>WebP Image Format</h3>
+              <p>Developed by Google, WebP is a modern image format that provides superior lossless and lossy compression for images on the web, resulting in smaller file sizes and faster loading times.</p>
+          </div>
+          <div class="info-card" data-format="image/gif">
+              <span class="format-tag">GIF</span>
+              <h3>Graphics Interchange Format</h3>
+              <p>GIF is a bitmap image format that supports animations and a limited color palette. It uses lossless compression and is widely used for simple animated images and low-resolution graphics on the web.</p>
+          </div>
+          <div class="info-card" data-format="image/bmp">
+              <span class="format-tag">BMP</span>
+              <h3>Bitmap Image File</h3>
+              <p>BMP is a raster graphics image file format used to store bitmap digital images, independently of the display device. It is generally uncompressed, which results in large file sizes but high quality.</p>
+          </div>
+          <div class="info-card" data-format="image/tiff">
+              <span class="format-tag">TIFF</span>
+              <h3>Tagged Image File Format</h3>
+              <p>TIFF is a versatile and high-quality image format that supports lossless compression. It is commonly used in photography, desktop publishing, and graphic design for its ability to store rich image data.</p>
+          </div>
+          <div class="info-card" data-format="image/x-icon">
+              <span class="format-tag">ICO</span>
+              <h3>Icon File</h3>
+              <p>The ICO file format is an image file format for computer icons in Microsoft Windows. ICO files contain one or more small images at multiple sizes and color depths for scaling purposes.</p>
+          </div>
+          <div class="info-card" data-format="image/svg+xml">
+              <span class="format-tag">SVG</span>
+              <h3>Scalable Vector Graphics</h3>
+              <p>SVG is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. Because it's a vector format, it can scale to any size without losing quality.</p>
+          </div>
+          <div class="info-card" data-format="image/heic">
+              <span class="format-tag">HEIC</span>
+              <h3>High Efficiency Image Container</h3>
+              <p>HEIC is a modern container format for images and image sequences, primarily used by Apple devices. It offers significant compression improvements over JPEG with comparable image quality.</p>
+          </div>
+          <div class="info-card" data-format="image/avif">
+              <span class="format-tag">AVIF</span>
+              <h3>AV1 Image File Format</h3>
+              <p>AVIF is an ultra-modern image format based on the AV1 video codec. It offers significantly better compression than JPEG and even WebP, supporting both lossy and lossless compression, transparency, and more.</p>
+          </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy;2025 Converter. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+    </footer>
+
+    <template id="file-item-template">
+        <div class="file-item">
+            <div class="file-info">
+                <svg class="file-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span class="file-name" data-file-name></span>
+            </div>
+            <div class="file-actions">
+                <span>to</span>
+                <div class="format-dropdown-wrapper">
+                    <select class="format-select" data-format-select>
+                        <option value="image/webp">WEBP</option>
+                        <option value="image/jpeg">JPG</option>
+                        <option value="image/png">PNG</option>
+                        <option value="image/gif">GIF</option>
+                        <option value="image/bmp">BMP</option>
+                    </select>
+                </div>
+                <div class="status-container" data-status-container>
+                    <span class="file-status ready" data-file-status>READY</span>
+                    <div class="progress-bar-container hidden" data-progress-bar-container>
+                        <div class="progress-bar" data-progress-bar></div>
+                    </div>
+                    <div class="download-container hidden" data-download-container></div>
+                </div>
+                <span class="file-size" data-file-size></span>
+                <button class="remove-btn" data-remove-btn>&times;</button>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

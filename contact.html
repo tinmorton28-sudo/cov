@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Converter</title>
+    <meta name="description" content="Contact the Converter team for questions, support, or feedback. We're here to help you.">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav">
+        <a href="/" class="logo">Converter</a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content container">
+      <div class="converter-card">
+        <h1>Contact Us</h1>
+        
+        <p>We'd love to hear from you! If you have any questions, suggestions, issues, or would like to provide feedback, please don't hesitate to reach out.We will do our best to respond to your message as soon as possible.</p>
+         
+
+        <h2 class="form-heading">Send us a message</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST" class="contact-form">
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input type="email" name="_replyto" id="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p class="small-text mt-6">For privacy policy related questions, please visit our <a href="/privacy.html">Privacy Policy</a> page.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Converter. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/about.html">About Us</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
